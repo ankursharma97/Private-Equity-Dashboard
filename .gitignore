@@ -1,0 +1,10 @@
+# Raw SEC data
+data/companyfacts.zip
+data/submission.zip
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment/secrets
+.env
