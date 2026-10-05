@@ -1,0 +1,92 @@
+position,ticker,company,cik,error_type,error_message
+87,MTTN,"Matternet, Inc.",2075109,NO_ANNUAL_PERIODS,No annual financial periods found.
+127,JBK,LEHMAN ABS CORP GOLDMAN SACHS CAP 1 SEC BACKED SER 2004-6,1284143,FileNotFoundError,Company Facts JSON not found for CIK 0001284143
+128,IPB,MERRILL LYNCH DEPOSITOR INC INDEXPLUS TRUST SERIES 2003-1,1267332,FileNotFoundError,Company Facts JSON not found for CIK 0001267332
+129,PYT,PPLUS Trust Series GSC-2,1294808,FileNotFoundError,Company Facts JSON not found for CIK 0001294808
+130,GJH,STRATS SM TRUST FOR U S CELL CORP SEC SERIES 2004 6,1286405,FileNotFoundError,Company Facts JSON not found for CIK 0001286405
+131,GJO,"STRATS SM TRUST FOR WAL-MART STORES, INC. SECURITIES, SERIES 2005-4",1340909,FileNotFoundError,Company Facts JSON not found for CIK 0001340909
+132,GJP,"STRATS(SM) TRUST FOR DOMINION RESOURCES, INC. SECURITIES, SERIES 2005-6",1343491,FileNotFoundError,Company Facts JSON not found for CIK 0001343491
+133,GJT,"STRATS(SM) Trust for Allstate Corp Securities, Series 2006-3",1357660,FileNotFoundError,Company Facts JSON not found for CIK 0001357660
+134,GJS,"STRATS(SM) Trust for Goldman Sachs Group Securities, Series 2006-2",1356284,FileNotFoundError,Company Facts JSON not found for CIK 0001356284
+135,GJR,"STRATS(SM) Trust for Procter & Gamble Securities, Series 2006-1",1353226,FileNotFoundError,Company Facts JSON not found for CIK 0001353226
+136,KTH,STRUCTURED PRODUCTS CORP CORTS TR FOR PECO ENERGY CAP TR III,1283464,FileNotFoundError,Company Facts JSON not found for CIK 0001283464
+137,KTN,STRUCTURED PRODUCTS CORP CRED ENHANCE CORTS TR FOR AON CAP A,1283337,FileNotFoundError,Company Facts JSON not found for CIK 0001283337
+218,EIKN,"Eikon Therapeutics, Inc.",1861123,NO_ANNUAL_PERIODS,No annual financial periods found.
+321,YCY,AA Mission Acquisition Corp. II,2075336,NO_ANNUAL_PERIODS,No annual financial periods found.
+322,AIIA,AI Infrastructure Acquisition Corp.,2073553,NO_ANNUAL_PERIODS,No annual financial periods found.
+326,AACO,Abony Acquisition Corp. I,2099906,NO_ANNUAL_PERIODS,No annual financial periods found.
+327,AEAQ,Activate Energy Acquisition Corp.,2083689,NO_ANNUAL_PERIODS,No annual financial periods found.
+328,AESP,Aeon Acquisition I Corp.,2082526,NO_ANNUAL_PERIODS,No annual financial periods found.
+331,ALOV,"Aldabra 4 Liquidity Opportunity Vehicle, Inc.",2083989,NO_ANNUAL_PERIODS,No annual financial periods found.
+334,ADAC,American Drive Acquisition Co,2083002,NO_ANNUAL_PERIODS,No annual financial periods found.
+335,AEXA,American Exceptionalism Acquisition Corp. A,2079173,NO_ANNUAL_PERIODS,No annual financial periods found.
+337,APXT,Apex Treasury Corp,2079253,NO_ANNUAL_PERIODS,No annual financial periods found.
+340,AACI,Armada Acquisition Corp. III,2092897,NO_ANNUAL_PERIODS,No annual financial periods found.
+341,ARTC,Art Technology Acquisition Corp.,2086545,NO_ANNUAL_PERIODS,No annual financial periods found.
+343,BISA,BALTIC INTERNATIONAL USA INC,918545,FileNotFoundError,Company Facts JSON not found for CIK 0000918545
+344,BMOK,BM Acquisition Corp.,2071607,NO_ANNUAL_PERIODS,No annual financial periods found.
+347,BCSS,Bain Capital GSS Investment Corp.,2064355,NO_ANNUAL_PERIODS,No annual financial periods found.
+349,BIXI,Bitcoin Infrastructure Acquisition Corp Ltd,2082542,NO_ANNUAL_PERIODS,No annual financial periods found.
+350,BIII,Black Spade Acquisition III Co,2087087,NO_ANNUAL_PERIODS,No annual financial periods found.
+354,BLRK,Bluerock Acquisition Corp.,2081532,NO_ANNUAL_PERIODS,No annual financial periods found.
+361,CAQ,Cambridge Acquisition Corp.,2100125,NO_ANNUAL_PERIODS,No annual financial periods found.
+373,CTAA,Clearthink 1 Acquisition Corp.,2094073,NO_ANNUAL_PERIODS,No annual financial periods found.
+380,CRAN,Crane Harbor Acquisition Corp. II,2081358,NO_ANNUAL_PERIODS,No annual financial periods found.
+381,CRAC,Crown Reserve Acquisition Corp. I,2070887,NO_ANNUAL_PERIODS,No annual financial periods found.
+382,DBCA,D. Boral Acquisition I Corp.,2095161,NO_ANNUAL_PERIODS,No annual financial periods found.
+384,DSAC,Daedalus Special Acquisition Corp.,2082149,NO_ANNUAL_PERIODS,No annual financial periods found.
+388,DNMX,Dynamix Corp III,2081125,NO_ANNUAL_PERIODS,No annual financial periods found.
+392,EMIS,Emmis Acquisition Corp.,2075816,NO_ANNUAL_PERIODS,No annual financial periods found.
+393,EVOX,Evolution Global Acquisition Corp,2077954,NO_ANNUAL_PERIODS,No annual financial periods found.
+394,FGII,FG Imperii Acquisition Corp.,2090452,NO_ANNUAL_PERIODS,No annual financial periods found.
+398,FCRS,FutureCrest Acquisition Corp.,2074697,NO_ANNUAL_PERIODS,No annual financial periods found.
+402,LATA,Galata Acquisition Corp. II,2076427,NO_ANNUAL_PERIODS,No annual financial periods found.
+403,GPAC,General Purpose Acquisition Corp.,2085408,NO_ANNUAL_PERIODS,No annual financial periods found.
+405,GIW,GigCapital8 Corp.,2080019,NO_ANNUAL_PERIODS,No annual financial periods found.
+406,GIX,GigCapital9 Corp.,2098712,NO_ANNUAL_PERIODS,No annual financial periods found.
+410,HCMA,HCM III ACQUISITION CORP.,2069856,NO_ANNUAL_PERIODS,No annual financial periods found.
+411,HACQ,HCM IV Acquisition Corp.,2089982,NO_ANNUAL_PERIODS,No annual financial periods found.
+413,HLXC,Helix Acquisition Corp. III,2099656,NO_ANNUAL_PERIODS,No annual financial periods found.
+414,HCIC,Hennessy Capital Investment Corp. VIII,2099093,NO_ANNUAL_PERIODS,No annual financial periods found.
+416,HVMC,Highview Merger Corp.,2070602,NO_ANNUAL_PERIODS,No annual financial periods found.
+418,ITHA,ITHAX Acquisition Corp III,2080985,NO_ANNUAL_PERIODS,No annual financial periods found.
+419,IACO,Idea Acquisition Corp.,2091176,NO_ANNUAL_PERIODS,No annual financial periods found.
+421,IEAG,Infinite Eagle Acquisition Corp.,2084396,NO_ANNUAL_PERIODS,No annual financial periods found.
+425,DYOR,Insight Digital Partners II,2079292,NO_ANNUAL_PERIODS,No annual financial periods found.
+426,IGAC,Invest Green Acquisition Corp,2075068,NO_ANNUAL_PERIODS,No annual financial periods found.
+427,IRAB,Iris Acquisition Corp II,2077785,NO_ANNUAL_PERIODS,No annual financial periods found.
+434,KTWO,K2 Capital Acquisition Corp,2086524,NO_ANNUAL_PERIODS,No annual financial periods found.
+435,KRAQ,KRAKacquisition Corp,2082119,NO_ANNUAL_PERIODS,No annual financial periods found.
+437,KBON,Karbon Capital Partners Corp.,2088749,NO_ANNUAL_PERIODS,No annual financial periods found.
+442,ZKP,Lafayette Digital Acquisition Corp. I,2087447,NO_ANNUAL_PERIODS,No annual financial periods found.
+446,LPCV,Launchpad Cadenza Acquisition Corp I,2083728,NO_ANNUAL_PERIODS,No annual financial periods found.
+447,LFAC,Leapfrog Acquisition Corp,2084563,NO_ANNUAL_PERIODS,No annual financial periods found.
+451,MBVI,M3-Brigade Acquisition VI Corp.,2073928,NO_ANNUAL_PERIODS,No annual financial periods found.
+452,MESH,Meshflow Acquisition Corp,2081468,NO_ANNUAL_PERIODS,No annual financial periods found.
+454,MLAA,Mountain Lake Acquisition Corp. II,2094265,NO_ANNUAL_PERIODS,No annual financial periods found.
+455,MUZE,Muzero Acquisition Corp,2093484,NO_ANNUAL_PERIODS,No annual financial periods found.
+457,NWAX,New America Acquisition I Corp.,2074878,NO_ANNUAL_PERIODS,No annual financial periods found.
+462,OTGA,OTG Acquisition Corp. I,2077010,NO_ANNUAL_PERIODS,No annual financial periods found.
+464,OCAC,Ocean Capital Acquisition Corp,1926314,NO_ANNUAL_PERIODS,No annual financial periods found.
+465,OIM,OneIM Acquisition Corp.,2088325,NO_ANNUAL_PERIODS,No annual financial periods found.
+475,PTOR,Praetorian Acquisition Corp.,2093912,NO_ANNUAL_PERIODS,No annual financial periods found.
+477,PAAC,Proem Acquisition Corp. I,2087446,NO_ANNUAL_PERIODS,No annual financial periods found.
+478,PAII,Pyrophyte Acquisition Corp. II,2069238,NO_ANNUAL_PERIODS,No annual financial periods found.
+483,RNGT,Range Capital Acquisition Corp II,2078653,NO_ANNUAL_PERIODS,No annual financial periods found.
+488,KRSP,Rice Acquisition Corp 3,2074872,NO_ANNUAL_PERIODS,No annual financial periods found.
+492,SCII,SC II Acquisition Corp.,2076739,NO_ANNUAL_PERIODS,No annual financial periods found.
+495,SAC,Safeguard Acquisition Corp.,2082844,NO_ANNUAL_PERIODS,No annual financial periods found.
+499,SBXE,SilverBox Corp V,2081909,NO_ANNUAL_PERIODS,No annual financial periods found.
+501,SCPQ,Social Commerce Partners Corp,2083143,NO_ANNUAL_PERIODS,No annual financial periods found.
+502,SOCA,Solarius Capital Acquisition Corp.,2065948,NO_ANNUAL_PERIODS,No annual financial periods found.
+503,SORN,Soren Acquisition Corp.,2086263,NO_ANNUAL_PERIODS,No annual financial periods found.
+505,SAAQ,Space Asset Acquisition Corp.,2091222,NO_ANNUAL_PERIODS,No annual financial periods found.
+506,TMTS,Spartacus Acquisition Corp. II,2097364,NO_ANNUAL_PERIODS,No annual financial periods found.
+509,BEBE,TGE Value Creative Solutions Corp,2079933,NO_ANNUAL_PERIODS,No annual financial periods found.
+510,TDWD,Tailwind 2.0 Acquisition Corp.,2076616,NO_ANNUAL_PERIODS,No annual financial periods found.
+511,TLNC,Talon Capital Corp.,2073340,NO_ANNUAL_PERIODS,No annual financial periods found.
+517,BLZR,Trailblazer Acquisition Corp.,2075310,NO_ANNUAL_PERIODS,No annual financial periods found.
+521,UAC,United Acquisition Corp. I,2098669,NO_ANNUAL_PERIODS,No annual financial periods found.
+525,VHCP,Vine Hill Capital Investment Corp. II,2086264,NO_ANNUAL_PERIODS,No annual financial periods found.
+529,XCBE,X3 Acquisition Corp. Ltd.,2083493,NO_ANNUAL_PERIODS,No annual financial periods found.
+530,XSLL,Xsolla SPAC 1,2088807,NO_ANNUAL_PERIODS,No annual financial periods found.

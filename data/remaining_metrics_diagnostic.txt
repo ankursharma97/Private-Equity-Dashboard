@@ -1,0 +1,879 @@
+
+This is a diagnostic only.
+No production dataset is modified.
+
+
+================================================================================
+CAT
+================================================================================
+
+SECTION 1: DEBT CANDIDATES
+--------------------------------------------------------------------------------
+1. LongTermDebtNoncurrent
+   Label: Long-term Debt, Excluding Current Maturities
+   Definition: Amount after unamortized (discount) premium and debt issuance costs of long-term debt classified as noncurrent and excluding amounts to be repaid within one year or the normal operating cycle, if longer. Includes, but not limited to, notes payable, bonds payable, debentures, mortgage loans and comme...
+   Latest period: 2025-12-31
+   Recent coverage: 6
+   Total annual periods: 18
+   Recent periods: 2025-12-31, 2024-12-31, 2023-12-31, 2022-12-31, 2021-12-31, 2020-12-31
+
+2. ShortTermBorrowings
+   Label: Short-term Debt
+   Definition: Reflects the total carrying amount as of the balance sheet date of debt having initial terms less than one year or the normal operating cycle, if longer.
+   Latest period: 2025-12-31
+   Recent coverage: 6
+   Total annual periods: 18
+   Recent periods: 2025-12-31, 2024-12-31, 2023-12-31, 2022-12-31, 2021-12-31, 2020-12-31
+
+3. LineOfCreditFacilityMaximumBorrowingCapacity
+   Label: Line of Credit Facility, Maximum Borrowing Capacity
+   Definition: Maximum borrowing capacity under the credit facility without consideration of any current restrictions on the amount that could be borrowed or the amounts currently outstanding under the facility.
+   Latest period: 2025-12-31
+   Recent coverage: 6
+   Total annual periods: 16
+   Recent periods: 2025-12-31, 2024-12-31, 2023-12-31, 2022-12-31, 2021-12-31, 2020-12-31
+
+4. LineOfCreditFacilityRemainingBorrowingCapacity
+   Label: Line of Credit Facility, Remaining Borrowing Capacity
+   Definition: Amount of borrowing capacity currently available under the credit facility (current borrowing capacity less the amount of borrowings outstanding).
+   Latest period: 2025-12-31
+   Recent coverage: 6
+   Total annual periods: 16
+   Recent periods: 2025-12-31, 2024-12-31, 2023-12-31, 2022-12-31, 2021-12-31, 2020-12-31
+
+5. LongTermDebtMaturitiesRepaymentsOfPrincipalInNextTwelveMonths
+   Label: Long-Term Debt, Maturity, Year One
+   Definition: Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing in next fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from curren...
+   Latest period: 2025-12-31
+   Recent coverage: 6
+   Total annual periods: 16
+   Recent periods: 2025-12-31, 2024-12-31, 2023-12-31, 2022-12-31, 2021-12-31, 2020-12-31
+
+6. LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFive
+   Label: Long-Term Debt, Maturity, Year Five
+   Definition: Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing in fifth fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from curre...
+   Latest period: 2025-12-31
+   Recent coverage: 6
+   Total annual periods: 16
+   Recent periods: 2025-12-31, 2024-12-31, 2023-12-31, 2022-12-31, 2021-12-31, 2020-12-31
+
+7. LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFour
+   Label: Long-Term Debt, Maturity, Year Four
+   Definition: Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing in fourth fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from curr...
+   Latest period: 2025-12-31
+   Recent coverage: 6
+   Total annual periods: 16
+   Recent periods: 2025-12-31, 2024-12-31, 2023-12-31, 2022-12-31, 2021-12-31, 2020-12-31
+
+8. LongTermDebtMaturitiesRepaymentsOfPrincipalInYearThree
+   Label: Long-Term Debt, Maturity, Year Three
+   Definition: Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing in third fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from curre...
+   Latest period: 2025-12-31
+   Recent coverage: 6
+   Total annual periods: 16
+   Recent periods: 2025-12-31, 2024-12-31, 2023-12-31, 2022-12-31, 2021-12-31, 2020-12-31
+
+9. LongTermDebtMaturitiesRepaymentsOfPrincipalInYearTwo
+   Label: Long-Term Debt, Maturity, Year Two
+   Definition: Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing in second fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from curr...
+   Latest period: 2025-12-31
+   Recent coverage: 6
+   Total annual periods: 16
+   Recent periods: 2025-12-31, 2024-12-31, 2023-12-31, 2022-12-31, 2021-12-31, 2020-12-31
+
+10. DebtSecuritiesHeldToMaturityAmortizedCostAfterAllowanceForCreditLoss
+   Label: None
+   Latest period: 2024-12-31
+   Recent coverage: 4
+   Total annual periods: 4
+   Recent periods: 2024-12-31, 2023-12-31, 2022-12-31, 2020-12-31
+
+11. PaymentsOfDebtExtinguishmentCosts
+   Label: Payment for Debt Extinguishment or Debt Prepayment Cost
+   Definition: Amount of cash outflow for cost from early extinguishment and prepayment of debt. Includes, but is not limited to, third-party cost, premium paid, and other fee paid to lender directly for debt extinguishment or debt prepayment. Excludes accrued interest.
+   Latest period: 2017-11-10
+   Recent coverage: 1
+   Total annual periods: 1
+   Recent periods: 2017-11-10
+
+12. DeferredFinanceCostsNet
+   Label: Debt Issuance Costs, Net
+   Definition: Amount, after accumulated amortization, of debt issuance costs. Includes, but is not limited to, legal, accounting, underwriting, printing, and registration costs.
+   Latest period: 2015-12-31
+   Recent coverage: 1
+   Total annual periods: 1
+   Recent periods: 2015-12-31
+
+
+SECTION 2: INTEREST EXPENSE CANDIDATES
+--------------------------------------------------------------------------------
+1. IncomeTaxExaminationPenaltiesAndInterestExpense
+   Label: Income Tax Examination, Penalties and Interest Expense
+   Definition: The sum of the amounts of estimated penalties and interest recognized in the period arising from income tax examinations.
+   Latest period: 2025-12-31
+   Recent coverage: 6
+   Total annual periods: 18
+   Recent periods: 2025-12-31, 2024-12-31, 2023-12-31, 2022-12-31, 2021-12-31, 2020-12-31
+
+2. InterestPaidNet
+   Label: Interest Paid, Excluding Capitalized Interest, Operating Activities
+   Definition: Amount of cash paid for interest, excluding capitalized interest, classified as operating activity. Includes, but is not limited to, payment to settle zero-coupon bond for accreted interest of debt discount and debt instrument with insignificant coupon interest rate in relation to effective interest...
+   Latest period: 2025-12-31
+   Recent coverage: 6
+   Total annual periods: 18
+   Recent periods: 2025-12-31, 2024-12-31, 2023-12-31, 2022-12-31, 2021-12-31, 2020-12-31
+
+
+SECTION 3: OPERATING INCOME CANDIDATES
+--------------------------------------------------------------------------------
+1. OperatingIncomeLoss
+   Label: Operating Income (Loss)
+   Definition: The net result for the period of deducting operating expenses from operating revenues.
+   Latest period: 2025-12-31
+   Recent coverage: 6
+   Total annual periods: 19
+   Recent periods: 2025-12-31, 2024-12-31, 2023-12-31, 2022-12-31, 2021-12-31, 2020-12-31
+
+2. OtherOperatingIncomeExpenseNet
+   Label: Other Operating Income (Expense), Net
+   Definition: The net amount of other operating income and expenses, the components of which are not separately disclosed on the income statement, from items that are associated with the entity's normal revenue producing operations.
+   Latest period: 2025-12-31
+   Recent coverage: 6
+   Total annual periods: 16
+   Recent periods: 2025-12-31, 2024-12-31, 2023-12-31, 2022-12-31, 2021-12-31, 2020-12-31
+
+
+================================================================================
+AAPL
+================================================================================
+
+SECTION 1: DEBT CANDIDATES
+--------------------------------------------------------------------------------
+1. DebtInstrumentCarryingAmount
+   Label: Long-term Debt, Gross
+   Definition: Amount, before unamortized (discount) premium and debt issuance costs, of long-term debt. Includes, but is not limited to, notes payable, bonds payable, commercial loans, mortgage loans, convertible debt, subordinated debt and other types of debt.
+   Latest period: 2025-09-27
+   Recent coverage: 6
+   Total annual periods: 13
+   Recent periods: 2025-09-27, 2024-09-28, 2023-09-30, 2022-09-24, 2021-09-25, 2020-09-26
+
+2. LongTermDebtMaturitiesRepaymentsOfPrincipalAfterYearFive
+   Label: Long-Term Debt, Maturity, after Year Five
+   Definition: Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing after fifth fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from cu...
+   Latest period: 2025-09-27
+   Recent coverage: 6
+   Total annual periods: 13
+   Recent periods: 2025-09-27, 2024-09-28, 2023-09-30, 2022-09-24, 2021-09-25, 2020-09-26
+
+3. LongTermDebtMaturitiesRepaymentsOfPrincipalInNextTwelveMonths
+   Label: Long-Term Debt, Maturity, Year One
+   Definition: Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing in next fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from curren...
+   Latest period: 2025-09-27
+   Recent coverage: 6
+   Total annual periods: 13
+   Recent periods: 2025-09-27, 2024-09-28, 2023-09-30, 2022-09-24, 2021-09-25, 2020-09-26
+
+4. LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFive
+   Label: Long-Term Debt, Maturity, Year Five
+   Definition: Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing in fifth fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from curre...
+   Latest period: 2025-09-27
+   Recent coverage: 6
+   Total annual periods: 13
+   Recent periods: 2025-09-27, 2024-09-28, 2023-09-30, 2022-09-24, 2021-09-25, 2020-09-26
+
+5. LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFour
+   Label: Long-Term Debt, Maturity, Year Four
+   Definition: Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing in fourth fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from curr...
+   Latest period: 2025-09-27
+   Recent coverage: 6
+   Total annual periods: 13
+   Recent periods: 2025-09-27, 2024-09-28, 2023-09-30, 2022-09-24, 2021-09-25, 2020-09-26
+
+6. LongTermDebtMaturitiesRepaymentsOfPrincipalInYearThree
+   Label: Long-Term Debt, Maturity, Year Three
+   Definition: Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing in third fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from curre...
+   Latest period: 2025-09-27
+   Recent coverage: 6
+   Total annual periods: 13
+   Recent periods: 2025-09-27, 2024-09-28, 2023-09-30, 2022-09-24, 2021-09-25, 2020-09-26
+
+7. LongTermDebtMaturitiesRepaymentsOfPrincipalInYearTwo
+   Label: Long-Term Debt, Maturity, Year Two
+   Definition: Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing in second fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from curr...
+   Latest period: 2025-09-27
+   Recent coverage: 6
+   Total annual periods: 13
+   Recent periods: 2025-09-27, 2024-09-28, 2023-09-30, 2022-09-24, 2021-09-25, 2020-09-26
+
+8. LongTermDebtCurrent
+   Label: Long-term Debt, Current Maturities
+   Definition: Amount, after unamortized (discount) premium and debt issuance costs, of long-term debt, classified as current. Includes, but not limited to, notes payable, bonds payable, debentures, mortgage loans and commercial paper. Excludes capital lease obligations.
+   Latest period: 2025-09-27
+   Recent coverage: 6
+   Total annual periods: 12
+   Recent periods: 2025-09-27, 2024-09-28, 2023-09-30, 2022-09-24, 2021-09-25, 2020-09-26
+
+9. LongTermDebtNoncurrent
+   Label: Long-term Debt, Excluding Current Maturities
+   Definition: Amount after unamortized (discount) premium and debt issuance costs of long-term debt classified as noncurrent and excluding amounts to be repaid within one year or the normal operating cycle, if longer. Includes, but not limited to, notes payable, bonds payable, debentures, mortgage loans and comme...
+   Latest period: 2025-09-27
+   Recent coverage: 6
+   Total annual periods: 12
+   Recent periods: 2025-09-27, 2024-09-28, 2023-09-30, 2022-09-24, 2021-09-25, 2020-09-26
+
+10. LongTermDebt
+   Label: Long-term Debt
+   Definition: Amount, after unamortized (discount) premium and debt issuance costs, of long-term debt. Includes, but not limited to, notes payable, bonds payable, debentures, mortgage loans and commercial paper. Excludes capital lease obligations.
+   Latest period: 2025-09-27
+   Recent coverage: 6
+   Total annual periods: 7
+   Recent periods: 2025-09-27, 2024-09-28, 2023-09-30, 2022-09-24, 2014-09-27, 2013-09-28
+
+11. ShortTermDebtWeightedAverageInterestRate
+   Label: Short-term Debt, Weighted Average Interest Rate, at Point in Time
+   Definition: Weighted average interest rate of short-term debt outstanding calculated at point in time.
+   Latest period: 2020-09-26
+   Recent coverage: 6
+   Total annual periods: 6
+   Recent periods: 2020-09-26, 2019-09-28, 2018-09-29, 2017-09-30, 2016-09-24, 2014-09-27
+
+
+SECTION 2: INTEREST EXPENSE CANDIDATES
+--------------------------------------------------------------------------------
+1. InterestExpense
+   Label: Interest Expense
+   Definition: Amount of the cost of borrowed funds accounted for as interest expense.
+   Latest period: 2023-09-30
+   Recent coverage: 6
+   Total annual periods: 13
+   Recent periods: 2023-09-30, 2022-09-24, 2021-09-25, 2020-09-26, 2019-09-28, 2018-09-29
+
+2. InterestPaidNet
+   Label: Interest Paid, Excluding Capitalized Interest, Operating Activities
+   Definition: Amount of cash paid for interest, excluding capitalized interest, classified as operating activity. Includes, but is not limited to, payment to settle zero-coupon bond for accreted interest of debt discount and debt instrument with insignificant coupon interest rate in relation to effective interest...
+   Latest period: 2023-09-30
+   Recent coverage: 6
+   Total annual periods: 8
+   Recent periods: 2023-09-30, 2022-09-24, 2021-09-25, 2020-09-26, 2019-09-28, 2018-09-29
+
+3. InterestCostsIncurred
+   Label: Interest Costs Incurred
+   Definition: Total interest costs incurred during the period and either capitalized or charged against earnings.
+   Latest period: 2023-09-30
+   Recent coverage: 6
+   Total annual periods: 7
+   Recent periods: 2023-09-30, 2022-09-24, 2021-09-25, 2020-09-26, 2019-09-28, 2018-09-29
+
+4. UnrecognizedTaxBenefitsIncomeTaxPenaltiesAndInterestExpense
+   Label: Unrecognized Tax Benefits, Income Tax Penalties and Interest Expense
+   Definition: Amount of expense for interest on an underpayment of income taxes and penalties related to a tax position claimed or expected to be claimed in the tax return.
+   Latest period: 2021-09-25
+   Recent coverage: 6
+   Total annual periods: 10
+   Recent periods: 2021-09-25, 2020-09-26, 2019-09-28, 2018-09-29, 2017-09-30, 2016-09-24
+
+5. InterestExpenseDebt
+   Label: Interest Expense, Debt
+   Definition: Amount of the cost of borrowed funds accounted for as interest expense for debt.
+   Latest period: 2021-09-25
+   Recent coverage: 6
+   Total annual periods: 9
+   Recent periods: 2021-09-25, 2020-09-26, 2019-09-28, 2018-09-29, 2017-09-30, 2016-09-24
+
+6. InterestPaid
+   Label: Interest Paid, Including Capitalized Interest, Operating and Investing Activities
+   Definition: Amount of cash paid for interest, including, but not limited to, capitalized interest and payment to settle zero-coupon bond attributable to accreted interest of debt discount and debt instrument with insignificant coupon interest rate in relation to effective interest rate of borrowing attributable...
+   Latest period: 2017-09-30
+   Recent coverage: 6
+   Total annual periods: 6
+   Recent periods: 2017-09-30, 2016-09-24, 2015-09-26, 2014-09-27, 2013-09-28, 2012-09-29
+
+7. IncomeTaxExaminationInterestExpense
+   Label: Income Tax Examination, Interest Expense
+   Definition: The amount of estimated interest recognized in the period arising from income tax examinations.
+   Latest period: 2010-09-25
+   Recent coverage: 2
+   Total annual periods: 2
+   Recent periods: 2010-09-25, 2009-09-26
+
+
+SECTION 3: OPERATING INCOME CANDIDATES
+--------------------------------------------------------------------------------
+1. OperatingIncomeLoss
+   Label: Operating Income (Loss)
+   Definition: The net result for the period of deducting operating expenses from operating revenues.
+   Latest period: 2025-09-27
+   Recent coverage: 6
+   Total annual periods: 19
+   Recent periods: 2025-09-27, 2024-09-28, 2023-09-30, 2022-09-24, 2021-09-25, 2020-09-26
+
+
+================================================================================
+JNJ
+================================================================================
+
+SECTION 1: DEBT CANDIDATES
+--------------------------------------------------------------------------------
+1. LongTermDebtNoncurrent
+   Label: Long-term Debt, Excluding Current Maturities
+   Definition: Amount after unamortized (discount) premium and debt issuance costs of long-term debt classified as noncurrent and excluding amounts to be repaid within one year or the normal operating cycle, if longer. Includes, but not limited to, notes payable, bonds payable, debentures, mortgage loans and comme...
+   Latest period: 2025-12-28
+   Recent coverage: 6
+   Total annual periods: 18
+   Recent periods: 2025-12-28, 2024-12-29, 2023-12-31, 2023-01-01, 2022-01-02, 2021-01-03
+
+2. ShortTermBorrowings
+   Label: Short-term Debt
+   Definition: Reflects the total carrying amount as of the balance sheet date of debt having initial terms less than one year or the normal operating cycle, if longer.
+   Latest period: 2025-12-28
+   Recent coverage: 6
+   Total annual periods: 18
+   Recent periods: 2025-12-28, 2024-12-29, 2023-12-31, 2023-01-01, 2022-01-02, 2021-01-03
+
+3. DebtCurrent
+   Label: Debt, Current
+   Definition: Amount of short-term debt and current maturity of long-term debt and capital lease obligations due within one year or the normal operating cycle, if longer.
+   Latest period: 2025-12-28
+   Recent coverage: 6
+   Total annual periods: 16
+   Recent periods: 2025-12-28, 2024-12-29, 2023-12-31, 2023-01-01, 2022-01-02, 2021-01-03
+
+4. LongTermDebtMaturitiesRepaymentsOfPrincipalAfterYearFive
+   Label: Long-Term Debt, Maturity, after Year Five
+   Definition: Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing after fifth fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from cu...
+   Latest period: 2025-12-28
+   Recent coverage: 6
+   Total annual periods: 16
+   Recent periods: 2025-12-28, 2024-12-29, 2023-12-31, 2023-01-01, 2022-01-02, 2021-01-03
+
+5. LongTermDebtMaturitiesRepaymentsOfPrincipalInNextTwelveMonths
+   Label: Long-Term Debt, Maturity, Year One
+   Definition: Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing in next fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from curren...
+   Latest period: 2025-12-28
+   Recent coverage: 6
+   Total annual periods: 16
+   Recent periods: 2025-12-28, 2024-12-29, 2023-12-31, 2023-01-01, 2022-01-02, 2021-01-03
+
+6. LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFive
+   Label: Long-Term Debt, Maturity, Year Five
+   Definition: Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing in fifth fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from curre...
+   Latest period: 2025-12-28
+   Recent coverage: 6
+   Total annual periods: 16
+   Recent periods: 2025-12-28, 2024-12-29, 2023-12-31, 2023-01-01, 2022-01-02, 2021-01-03
+
+7. LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFour
+   Label: Long-Term Debt, Maturity, Year Four
+   Definition: Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing in fourth fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from curr...
+   Latest period: 2025-12-28
+   Recent coverage: 6
+   Total annual periods: 16
+   Recent periods: 2025-12-28, 2024-12-29, 2023-12-31, 2023-01-01, 2022-01-02, 2021-01-03
+
+8. LongTermDebtMaturitiesRepaymentsOfPrincipalInYearThree
+   Label: Long-Term Debt, Maturity, Year Three
+   Definition: Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing in third fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from curre...
+   Latest period: 2025-12-28
+   Recent coverage: 6
+   Total annual periods: 16
+   Recent periods: 2025-12-28, 2024-12-29, 2023-12-31, 2023-01-01, 2022-01-02, 2021-01-03
+
+9. LongTermDebtMaturitiesRepaymentsOfPrincipalInYearTwo
+   Label: Long-Term Debt, Maturity, Year Two
+   Definition: Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing in second fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from curr...
+   Latest period: 2025-12-28
+   Recent coverage: 6
+   Total annual periods: 16
+   Recent periods: 2025-12-28, 2024-12-29, 2023-12-31, 2023-01-01, 2022-01-02, 2021-01-03
+
+10. LongTermDebtCurrent
+   Label: Long-term Debt, Current Maturities
+   Definition: Amount, after unamortized (discount) premium and debt issuance costs, of long-term debt, classified as current. Includes, but not limited to, notes payable, bonds payable, debentures, mortgage loans and commercial paper. Excludes capital lease obligations.
+   Latest period: 2025-12-28
+   Recent coverage: 6
+   Total annual periods: 11
+   Recent periods: 2025-12-28, 2024-12-29, 2023-12-31, 2023-01-01, 2022-01-02, 2021-01-03
+
+11. LongTermDebt
+   Label: Long-term Debt
+   Definition: Amount, after unamortized (discount) premium and debt issuance costs, of long-term debt. Includes, but not limited to, notes payable, bonds payable, debentures, mortgage loans and commercial paper. Excludes capital lease obligations.
+   Latest period: 2025-12-28
+   Recent coverage: 6
+   Total annual periods: 8
+   Recent periods: 2025-12-28, 2024-12-29, 2023-12-31, 2023-01-01, 2022-01-02, 2021-01-03
+
+12. LineOfCreditFacilityMaximumBorrowingCapacity
+   Label: Line of Credit Facility, Maximum Borrowing Capacity
+   Definition: Maximum borrowing capacity under the credit facility without consideration of any current restrictions on the amount that could be borrowed or the amounts currently outstanding under the facility.
+   Latest period: 2025-06-30
+   Recent coverage: 6
+   Total annual periods: 16
+   Recent periods: 2025-06-30, 2024-06-30, 2023-09-30, 2022-11-30, 2021-09-30, 2021-01-03
+
+13. DebtConversionOriginalDebtAmount
+   Label: Debt Conversion, Original Debt, Amount (Deprecated 2011-01-31)
+   Definition: The amount of the original debt being converted in a noncash (or part noncash) transaction. "Part noncash" refers to that portion of the transaction not resulting in cash receipts or cash payments in the period.
+   Latest period: 2010-01-03
+   Recent coverage: 3
+   Total annual periods: 3
+   Recent periods: 2010-01-03, 2008-12-28, 2007-12-30
+
+
+SECTION 2: INTEREST EXPENSE CANDIDATES
+--------------------------------------------------------------------------------
+1. InterestPaidNet
+   Label: Interest Paid, Excluding Capitalized Interest, Operating Activities
+   Definition: Amount of cash paid for interest, excluding capitalized interest, classified as operating activity. Includes, but is not limited to, payment to settle zero-coupon bond for accreted interest of debt discount and debt instrument with insignificant coupon interest rate in relation to effective interest...
+   Latest period: 2025-12-28
+   Recent coverage: 6
+   Total annual periods: 19
+   Recent periods: 2025-12-28, 2024-12-29, 2023-12-31, 2023-01-01, 2022-01-02, 2021-01-03
+
+2. InterestCostsCapitalized
+   Label: Interest Costs Capitalized
+   Definition: Amount of interest capitalized during the period.
+   Latest period: 2025-12-28
+   Recent coverage: 6
+   Total annual periods: 18
+   Recent periods: 2025-12-28, 2024-12-29, 2023-12-31, 2023-01-01, 2022-01-02, 2021-01-03
+
+3. InterestPaid
+   Label: Interest Paid, Including Capitalized Interest, Operating and Investing Activities
+   Definition: Amount of cash paid for interest, including, but not limited to, capitalized interest and payment to settle zero-coupon bond attributable to accreted interest of debt discount and debt instrument with insignificant coupon interest rate in relation to effective interest rate of borrowing attributable...
+   Latest period: 2025-12-28
+   Recent coverage: 6
+   Total annual periods: 16
+   Recent periods: 2025-12-28, 2024-12-29, 2023-12-31, 2023-01-01, 2022-01-02, 2021-01-03
+
+4. InterestExpense
+   Label: Interest Expense
+   Definition: Amount of the cost of borrowed funds accounted for as interest expense.
+   Latest period: 2023-12-31
+   Recent coverage: 6
+   Total annual periods: 17
+   Recent periods: 2023-12-31, 2023-01-01, 2022-01-02, 2021-01-03, 2019-12-29, 2018-12-30
+
+5. DisposalGroupIncludingDiscontinuedOperationInterestExpense
+   Label: Disposal Group, Including Discontinued Operation, Interest Expense
+   Definition: Amount of interest expense attributable to disposal group, including, but not limited to, discontinued operation.
+   Latest period: 2023-12-31
+   Recent coverage: 3
+   Total annual periods: 3
+   Recent periods: 2023-12-31, 2023-01-01, 2022-01-02
+
+6. DebtInstrumentConvertibleInterestExpense
+   Label: Debt Instrument, Convertible, Interest Expense (Deprecated 2013-01-31)
+   Definition: Interest expense related to convertible debt instruments which has been recognized for the period, including the contractual interest coupon and amortization of the debt discount, if any.
+   Latest period: 2012-12-30
+   Recent coverage: 5
+   Total annual periods: 5
+   Recent periods: 2012-12-30, 2012-01-01, 2011-01-02, 2010-01-03, 2008-12-28
+
+
+SECTION 3: OPERATING INCOME CANDIDATES
+--------------------------------------------------------------------------------
+1. OperatingIncomeLoss
+   Label: Operating Income (Loss)
+   Definition: The net result for the period of deducting operating expenses from operating revenues.
+   Latest period: 2014-12-28
+   Recent coverage: 6
+   Total annual periods: 6
+   Recent periods: 2014-12-28, 2013-12-29, 2012-12-30, 2012-01-01, 2011-01-02, 2010-01-03
+
+
+SECTION 4: JNJ PERIOD INVESTIGATION
+--------------------------------------------------------------------------------
+RevenueFromContractWithCustomerExcludingAssessedTax:
+  start=2024-12-30 | end=2025-12-28 | filed=2026-02-11 | form=10-K | fy=2025 | fp=FY | value=94193000000 | accn=0000200406-26-000016
+  start=2024-01-01 | end=2024-12-29 | filed=2026-02-11 | form=10-K | fy=2025 | fp=FY | value=88821000000 | accn=0000200406-26-000016
+  start=2024-01-01 | end=2024-12-29 | filed=2025-02-13 | form=10-K | fy=2024 | fp=FY | value=88821000000 | accn=0000200406-25-000038
+  start=2023-01-02 | end=2023-12-31 | filed=2026-02-11 | form=10-K | fy=2025 | fp=FY | value=85159000000 | accn=0000200406-26-000016
+  start=2023-01-02 | end=2023-12-31 | filed=2025-02-13 | form=10-K | fy=2024 | fp=FY | value=85159000000 | accn=0000200406-25-000038
+  start=2023-01-02 | end=2023-12-31 | filed=2024-02-16 | form=10-K | fy=2023 | fp=FY | value=85159000000 | accn=0000200406-24-000013
+  start=2022-01-03 | end=2023-01-01 | filed=2025-02-13 | form=10-K | fy=2024 | fp=FY | value=79990000000 | accn=0000200406-25-000038
+  start=2022-01-03 | end=2023-01-01 | filed=2024-02-16 | form=10-K | fy=2023 | fp=FY | value=79990000000 | accn=0000200406-24-000013
+  start=2022-01-03 | end=2023-01-01 | filed=2023-02-16 | form=10-K | fy=2022 | fp=FY | value=94943000000 | accn=0000200406-23-000016
+  start=2021-01-04 | end=2022-01-02 | filed=2024-02-16 | form=10-K | fy=2023 | fp=FY | value=78740000000 | accn=0000200406-24-000013
+
+OperatingIncomeLoss:
+  start=2013-12-30 | end=2014-12-28 | filed=2015-02-24 | form=10-K | fy=2014 | fp=FY | value=21590000000 | accn=0000200406-15-000004
+  start=2012-12-31 | end=2013-12-29 | filed=2015-02-24 | form=10-K | fy=2014 | fp=FY | value=16412000000 | accn=0000200406-15-000004
+  start=2012-12-31 | end=2013-12-29 | filed=2014-02-21 | form=10-K | fy=2013 | fp=FY | value=16412000000 | accn=0000200406-14-000033
+  start=2012-01-02 | end=2012-12-30 | filed=2015-02-24 | form=10-K | fy=2014 | fp=FY | value=14955000000 | accn=0000200406-15-000004
+  start=2012-01-02 | end=2012-12-30 | filed=2014-02-21 | form=10-K | fy=2013 | fp=FY | value=14955000000 | accn=0000200406-14-000033
+  start=2012-01-02 | end=2012-12-30 | filed=2013-02-22 | form=10-K | fy=2012 | fp=FY | value=14955000000 | accn=0000200406-13-000038
+  start=2011-01-03 | end=2012-01-01 | filed=2014-02-21 | form=10-K | fy=2013 | fp=FY | value=13765000000 | accn=0000200406-14-000033
+  start=2011-01-03 | end=2012-01-01 | filed=2013-02-22 | form=10-K | fy=2012 | fp=FY | value=13765000000 | accn=0000200406-13-000038
+  start=2011-01-03 | end=2012-01-01 | filed=2012-02-23 | form=10-K | fy=2011 | fp=FY | value=13765000000 | accn=0001193125-12-075565
+  start=2010-01-04 | end=2011-01-02 | filed=2013-02-22 | form=10-K | fy=2012 | fp=FY | value=17700000000 | accn=0000200406-13-000038
+  start=2010-01-04 | end=2011-01-02 | filed=2012-02-23 | form=10-K | fy=2011 | fp=FY | value=17700000000 | accn=0001193125-12-075565
+  start=2008-12-29 | end=2010-01-03 | filed=2012-02-23 | form=10-K | fy=2011 | fp=FY | value=16582000000 | accn=0001193125-12-075565
+
+================================================================================
+NVDA
+================================================================================
+
+SECTION 1: DEBT CANDIDATES
+--------------------------------------------------------------------------------
+1. LongTermDebt
+   Label: Long-term Debt
+   Definition: Amount, after unamortized (discount) premium and debt issuance costs, of long-term debt. Includes, but not limited to, notes payable, bonds payable, debentures, mortgage loans and commercial paper. Excludes capital lease obligations.
+   Latest period: 2026-01-25
+   Recent coverage: 6
+   Total annual periods: 14
+   Recent periods: 2026-01-25, 2025-01-26, 2024-01-28, 2023-01-29, 2022-01-30, 2021-01-31
+
+2. DebtCurrent
+   Label: Debt, Current
+   Definition: Amount of short-term debt and current maturity of long-term debt and capital lease obligations due within one year or the normal operating cycle, if longer.
+   Latest period: 2026-01-25
+   Recent coverage: 6
+   Total annual periods: 7
+   Recent periods: 2026-01-25, 2025-01-26, 2024-01-28, 2023-01-29, 2022-01-30, 2021-01-31
+
+3. LongTermDebtCurrent
+   Label: Long-term Debt, Current Maturities
+   Definition: Amount, after unamortized (discount) premium and debt issuance costs, of long-term debt, classified as current. Includes, but not limited to, notes payable, bonds payable, debentures, mortgage loans and commercial paper. Excludes capital lease obligations.
+   Latest period: 2026-01-25
+   Recent coverage: 6
+   Total annual periods: 7
+   Recent periods: 2026-01-25, 2025-01-26, 2024-01-28, 2023-01-29, 2022-01-30, 2021-01-31
+
+4. LongTermDebtNoncurrent
+   Label: Long-term Debt, Excluding Current Maturities
+   Definition: Amount after unamortized (discount) premium and debt issuance costs of long-term debt classified as noncurrent and excluding amounts to be repaid within one year or the normal operating cycle, if longer. Includes, but not limited to, notes payable, bonds payable, debentures, mortgage loans and comme...
+   Latest period: 2026-01-25
+   Recent coverage: 6
+   Total annual periods: 7
+   Recent periods: 2026-01-25, 2025-01-26, 2024-01-28, 2023-01-29, 2022-01-30, 2021-01-31
+
+5. LongTermDebtFairValue
+   Label: Long-term Debt, Fair Value
+   Definition: The fair value amount of long-term debt whether such amount is presented as a separate caption or as a parenthetical disclosure. Additionally, this element may be used in connection with the fair value disclosures required in the footnote disclosures to the financial statements. The element may be u...
+   Latest period: 2026-01-25
+   Recent coverage: 2
+   Total annual periods: 2
+   Recent periods: 2026-01-25, 2025-01-26
+
+6. ConvertibleDebtCurrent
+   Label: Convertible Debt, Current
+   Definition: The portion of the carrying value of long-term convertible debt as of the balance sheet date that is scheduled to be repaid within one year or in the normal operating cycle if longer. Convertible debt is a financial instrument which can be exchanged for a specified amount of another security, typica...
+   Latest period: 2019-01-27
+   Recent coverage: 5
+   Total annual periods: 5
+   Recent periods: 2019-01-27, 2018-01-28, 2017-01-29, 2016-01-31, 2015-01-25
+
+7. ConvertibleDebt
+   Label: Convertible Debt
+   Definition: Including the current and noncurrent portions, carrying amount of debt identified as being convertible into another form of financial instrument (typically the entity's common stock) as of the balance sheet date, which originally required full repayment more than twelve months after issuance or grea...
+   Latest period: 2019-01-27
+   Recent coverage: 4
+   Total annual periods: 4
+   Recent periods: 2019-01-27, 2018-01-28, 2017-01-29, 2016-01-31
+
+8. LineOfCreditFacilityCurrentBorrowingCapacity
+   Label: Line of Credit Facility, Current Borrowing Capacity
+   Definition: Amount of current borrowing capacity under the credit facility considering any current restrictions on the amount that could be borrowed (for example, borrowings may be limited by the amount of current assets), but without considering any amounts currently outstanding under the facility.
+   Latest period: 2017-01-29
+   Recent coverage: 1
+   Total annual periods: 1
+   Recent periods: 2017-01-29
+
+9. ConvertibleDebtNoncurrent
+   Label: Convertible Debt, Noncurrent
+   Definition: Carrying amount of long-term convertible debt as of the balance sheet date, net of the amount due in the next twelve months or greater than the normal operating cycle, if longer. The debt is convertible into another form of financial instrument, typically the entity's common stock.
+   Latest period: 2016-01-31
+   Recent coverage: 2
+   Total annual periods: 2
+   Recent periods: 2016-01-31, 2015-01-25
+
+10. ConvertibleDebtFairValueDisclosures
+   Label: Convertible Debt, Fair Value Disclosures
+   Definition: Fair value portion of borrowing which can be exchanged for a specified number of another security at the option of the issuer or the holder, for example, but not limited to, the entity's common stock.
+   Latest period: 2015-01-25
+   Recent coverage: 2
+   Total annual periods: 2
+   Recent periods: 2015-01-25, 2014-01-26
+
+11. AvailableForSaleSecuritiesDebtMaturitiesAmortizedCost
+   Label: Available-for-sale Securities, Debt Maturities, Amortized Cost Basis (Deprecated 2014-01-31)
+   Definition: Amount of available-for-sale debt securities at cost, net of adjustments, which include, but are not limited to, accretion, amortization, collection of cash, previous other-than-temporary impairments (OTTI) recognized in earnings (less any cumulative-effect adjustments, as defined) and fair value he...
+   Latest period: 2014-01-26
+   Recent coverage: 5
+   Total annual periods: 5
+   Recent periods: 2014-01-26, 2013-01-27, 2012-01-29, 2011-01-30, 2010-01-31
+
+12. AvailableForSaleSecuritiesDebtMaturitiesFairValue
+   Label: Available-for-sale Securities, Debt Maturities, Fair Value (Deprecated 2011-01-31)
+   Definition: This item represents the total of all debt securities grouped by maturity dates, at fair value, which are categorized neither as held-to-maturity nor trading securities.
+   Latest period: 2011-01-30
+   Recent coverage: 2
+   Total annual periods: 2
+   Recent periods: 2011-01-30, 2010-01-31
+
+
+SECTION 2: INTEREST EXPENSE CANDIDATES
+--------------------------------------------------------------------------------
+1. UnrecognizedTaxBenefitsIncomeTaxPenaltiesAndInterestExpense
+   Label: Unrecognized Tax Benefits, Income Tax Penalties and Interest Expense
+   Definition: Amount of expense for interest on an underpayment of income taxes and penalties related to a tax position claimed or expected to be claimed in the tax return.
+   Latest period: 2026-01-25
+   Recent coverage: 6
+   Total annual periods: 7
+   Recent periods: 2026-01-25, 2025-01-26, 2024-01-28, 2023-01-29, 2022-01-30, 2021-01-31
+
+2. InterestPaidNet
+   Label: Interest Paid, Excluding Capitalized Interest, Operating Activities
+   Definition: Amount of cash paid for interest, excluding capitalized interest, classified as operating activity. Includes, but is not limited to, payment to settle zero-coupon bond for accreted interest of debt discount and debt instrument with insignificant coupon interest rate in relation to effective interest...
+   Latest period: 2025-01-26
+   Recent coverage: 6
+   Total annual periods: 15
+   Recent periods: 2025-01-26, 2024-01-28, 2023-01-29, 2022-01-30, 2021-01-31, 2020-01-26
+
+3. InterestExpense
+   Label: Interest Expense
+   Definition: Amount of the cost of borrowed funds accounted for as interest expense.
+   Latest period: 2024-01-28
+   Recent coverage: 6
+   Total annual periods: 17
+   Recent periods: 2024-01-28, 2023-01-29, 2022-01-30, 2021-01-31, 2020-01-26, 2019-01-27
+
+4. InterestExpenseDebt
+   Label: Interest Expense, Debt
+   Definition: Amount of the cost of borrowed funds accounted for as interest expense for debt.
+   Latest period: 2018-01-28
+   Recent coverage: 5
+   Total annual periods: 5
+   Recent periods: 2018-01-28, 2017-01-29, 2016-01-31, 2015-01-25, 2014-01-26
+
+5. InterestExpenseDebtExcludingAmortization
+   Label: Interest Expense, Debt, Excluding Amortization
+   Definition: Represents the portion of interest incurred in the period on debt arrangements that was charged against earnings, excluding amortization of debt discount (premium) and financing costs.
+   Latest period: 2018-01-28
+   Recent coverage: 5
+   Total annual periods: 5
+   Recent periods: 2018-01-28, 2017-01-29, 2016-01-31, 2015-01-25, 2014-01-26
+
+6. DebtInstrumentConvertibleInterestExpense
+   Label: Debt Instrument, Convertible, Interest Expense (Deprecated 2013-01-31)
+   Definition: Interest expense related to convertible debt instruments which has been recognized for the period, including the contractual interest coupon and amortization of the debt discount, if any.
+   Latest period: 2014-01-26
+   Recent coverage: 1
+   Total annual periods: 1
+   Recent periods: 2014-01-26
+
+
+SECTION 3: OPERATING INCOME CANDIDATES
+--------------------------------------------------------------------------------
+1. OperatingIncomeLoss
+   Label: Operating Income (Loss)
+   Definition: The net result for the period of deducting operating expenses from operating revenues.
+   Latest period: 2026-01-25
+   Recent coverage: 6
+   Total annual periods: 19
+   Recent periods: 2026-01-25, 2025-01-26, 2024-01-28, 2023-01-29, 2022-01-30, 2021-01-31
+
+
+================================================================================
+MSFT
+================================================================================
+
+SECTION 1: DEBT CANDIDATES
+--------------------------------------------------------------------------------
+1. LongTermDebtNoncurrent
+   Label: Long-term Debt, Excluding Current Maturities
+   Definition: Amount after unamortized (discount) premium and debt issuance costs of long-term debt classified as noncurrent and excluding amounts to be repaid within one year or the normal operating cycle, if longer. Includes, but not limited to, notes payable, bonds payable, debentures, mortgage loans and comme...
+   Latest period: 2026-06-30
+   Recent coverage: 6
+   Total annual periods: 18
+   Recent periods: 2026-06-30, 2025-06-30, 2024-06-30, 2023-06-30, 2022-06-30, 2021-06-30
+
+2. LongTermDebt
+   Label: Long-term Debt
+   Definition: Amount, after unamortized (discount) premium and debt issuance costs, of long-term debt. Includes, but not limited to, notes payable, bonds payable, debentures, mortgage loans and commercial paper. Excludes capital lease obligations.
+   Latest period: 2026-06-30
+   Recent coverage: 6
+   Total annual periods: 17
+   Recent periods: 2026-06-30, 2025-06-30, 2024-06-30, 2023-06-30, 2022-06-30, 2021-06-30
+
+3. LongTermDebtFairValue
+   Label: Long-term Debt, Fair Value
+   Definition: The fair value amount of long-term debt whether such amount is presented as a separate caption or as a parenthetical disclosure. Additionally, this element may be used in connection with the fair value disclosures required in the footnote disclosures to the financial statements. The element may be u...
+   Latest period: 2026-06-30
+   Recent coverage: 6
+   Total annual periods: 17
+   Recent periods: 2026-06-30, 2025-06-30, 2024-06-30, 2023-06-30, 2022-06-30, 2021-06-30
+
+4. LongTermDebtMaturitiesRepaymentsOfPrincipalAfterYearFive
+   Label: Long-Term Debt, Maturity, after Year Five
+   Definition: Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing after fifth fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from cu...
+   Latest period: 2026-06-30
+   Recent coverage: 6
+   Total annual periods: 17
+   Recent periods: 2026-06-30, 2025-06-30, 2024-06-30, 2023-06-30, 2022-06-30, 2021-06-30
+
+5. LongTermDebtMaturitiesRepaymentsOfPrincipalInNextTwelveMonths
+   Label: Long-Term Debt, Maturity, Year One
+   Definition: Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing in next fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from curren...
+   Latest period: 2026-06-30
+   Recent coverage: 6
+   Total annual periods: 17
+   Recent periods: 2026-06-30, 2025-06-30, 2024-06-30, 2023-06-30, 2022-06-30, 2021-06-30
+
+6. LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFive
+   Label: Long-Term Debt, Maturity, Year Five
+   Definition: Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing in fifth fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from curre...
+   Latest period: 2026-06-30
+   Recent coverage: 6
+   Total annual periods: 17
+   Recent periods: 2026-06-30, 2025-06-30, 2024-06-30, 2023-06-30, 2022-06-30, 2021-06-30
+
+7. LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFour
+   Label: Long-Term Debt, Maturity, Year Four
+   Definition: Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing in fourth fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from curr...
+   Latest period: 2026-06-30
+   Recent coverage: 6
+   Total annual periods: 17
+   Recent periods: 2026-06-30, 2025-06-30, 2024-06-30, 2023-06-30, 2022-06-30, 2021-06-30
+
+8. LongTermDebtMaturitiesRepaymentsOfPrincipalInYearThree
+   Label: Long-Term Debt, Maturity, Year Three
+   Definition: Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing in third fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from curre...
+   Latest period: 2026-06-30
+   Recent coverage: 6
+   Total annual periods: 17
+   Recent periods: 2026-06-30, 2025-06-30, 2024-06-30, 2023-06-30, 2022-06-30, 2021-06-30
+
+9. LongTermDebtMaturitiesRepaymentsOfPrincipalInYearTwo
+   Label: Long-Term Debt, Maturity, Year Two
+   Definition: Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing in second fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from curr...
+   Latest period: 2026-06-30
+   Recent coverage: 6
+   Total annual periods: 17
+   Recent periods: 2026-06-30, 2025-06-30, 2024-06-30, 2023-06-30, 2022-06-30, 2021-06-30
+
+10. LongTermDebtCurrent
+   Label: Long-term Debt, Current Maturities
+   Definition: Amount, after unamortized (discount) premium and debt issuance costs, of long-term debt, classified as current. Includes, but not limited to, notes payable, bonds payable, debentures, mortgage loans and commercial paper. Excludes capital lease obligations.
+   Latest period: 2026-06-30
+   Recent coverage: 6
+   Total annual periods: 15
+   Recent periods: 2026-06-30, 2025-06-30, 2024-06-30, 2023-06-30, 2022-06-30, 2021-06-30
+
+11. DebtInstrumentCarryingAmount
+   Label: Long-term Debt, Gross
+   Definition: Amount, before unamortized (discount) premium and debt issuance costs, of long-term debt. Includes, but is not limited to, notes payable, bonds payable, commercial loans, mortgage loans, convertible debt, subordinated debt and other types of debt.
+   Latest period: 2026-06-30
+   Recent coverage: 6
+   Total annual periods: 8
+   Recent periods: 2026-06-30, 2025-06-30, 2024-06-30, 2023-06-30, 2022-06-30, 2021-06-30
+
+12. ShortTermBorrowings
+   Label: Short-term Debt
+   Definition: Reflects the total carrying amount as of the balance sheet date of debt having initial terms less than one year or the normal operating cycle, if longer.
+   Latest period: 2018-06-30
+   Recent coverage: 6
+   Total annual periods: 9
+   Recent periods: 2018-06-30, 2017-06-30, 2016-06-30, 2015-06-30, 2014-06-30, 2013-06-30
+
+13. AvailableForSaleSecuritiesDebtMaturitiesAmortizedCost
+   Label: Available-for-sale Securities, Debt Maturities, Amortized Cost Basis (Deprecated 2014-01-31)
+   Definition: Amount of available-for-sale debt securities at cost, net of adjustments, which include, but are not limited to, accretion, amortization, collection of cash, previous other-than-temporary impairments (OTTI) recognized in earnings (less any cumulative-effect adjustments, as defined) and fair value he...
+   Latest period: 2014-06-30
+   Recent coverage: 5
+   Total annual periods: 5
+   Recent periods: 2014-06-30, 2013-06-30, 2012-06-30, 2011-06-30, 2010-06-30
+
+14. LineOfCreditFacilityMaximumBorrowingCapacity
+   Label: Line of Credit Facility, Maximum Borrowing Capacity
+   Definition: Maximum borrowing capacity under the credit facility without consideration of any current restrictions on the amount that could be borrowed or the amounts currently outstanding under the facility.
+   Latest period: 2014-06-30
+   Recent coverage: 4
+   Total annual periods: 4
+   Recent periods: 2014-06-30, 2013-06-30, 2010-11-30, 2009-11-30
+
+15. ConvertibleDebtCurrent
+   Label: Convertible Debt, Current
+   Definition: The portion of the carrying value of long-term convertible debt as of the balance sheet date that is scheduled to be repaid within one year or in the normal operating cycle if longer. Convertible debt is a financial instrument which can be exchanged for a specified amount of another security, typica...
+   Latest period: 2012-06-30
+   Recent coverage: 2
+   Total annual periods: 2
+   Recent periods: 2012-06-30, 2011-06-30
+
+16. LongTermNotesPayable
+   Label: Notes Payable, Noncurrent
+   Definition: Carrying value as of the balance sheet date of notes payable (with maturities initially due after one year or beyond the operating cycle if longer), excluding current portion.
+   Latest period: 2011-06-30
+   Recent coverage: 2
+   Total annual periods: 2
+   Recent periods: 2011-06-30, 2010-06-30
+
+17. AvailableForSaleSecuritiesDebtMaturitiesFairValue
+   Label: Available-for-sale Securities, Debt Maturities, Fair Value (Deprecated 2011-01-31)
+   Definition: This item represents the total of all debt securities grouped by maturity dates, at fair value, which are categorized neither as held-to-maturity nor trading securities.
+   Latest period: 2010-06-30
+   Recent coverage: 1
+   Total annual periods: 1
+   Recent periods: 2010-06-30
+
+18. LineOfCreditFacilityCurrentBorrowingCapacity
+   Label: Line of Credit Facility, Current Borrowing Capacity
+   Definition: Amount of current borrowing capacity under the credit facility considering any current restrictions on the amount that could be borrowed (for example, borrowings may be limited by the amount of current assets), but without considering any amounts currently outstanding under the facility.
+   Latest period: 2010-06-30
+   Recent coverage: 1
+   Total annual periods: 1
+   Recent periods: 2010-06-30
+
+
+SECTION 2: INTEREST EXPENSE CANDIDATES
+--------------------------------------------------------------------------------
+1. UnrecognizedTaxBenefitsIncomeTaxPenaltiesAndInterestExpense
+   Label: Unrecognized Tax Benefits, Income Tax Penalties and Interest Expense
+   Definition: Amount of expense for interest on an underpayment of income taxes and penalties related to a tax position claimed or expected to be claimed in the tax return.
+   Latest period: 2026-06-30
+   Recent coverage: 6
+   Total annual periods: 19
+   Recent periods: 2026-06-30, 2025-06-30, 2024-06-30, 2023-06-30, 2022-06-30, 2021-06-30
+
+2. InterestPaid
+   Label: Interest Paid, Including Capitalized Interest, Operating and Investing Activities
+   Definition: Amount of cash paid for interest, including, but not limited to, capitalized interest and payment to settle zero-coupon bond attributable to accreted interest of debt discount and debt instrument with insignificant coupon interest rate in relation to effective interest rate of borrowing attributable...
+   Latest period: 2026-06-30
+   Recent coverage: 6
+   Total annual periods: 18
+   Recent periods: 2026-06-30, 2025-06-30, 2024-06-30, 2023-06-30, 2022-06-30, 2021-06-30
+
+3. FinanceLeaseInterestExpense
+   Label: Finance Lease, Interest Expense
+   Definition: Amount of interest expense on finance lease liability.
+   Latest period: 2026-06-30
+   Recent coverage: 6
+   Total annual periods: 11
+   Recent periods: 2026-06-30, 2025-06-30, 2024-06-30, 2023-06-30, 2022-06-30, 2021-06-30
+
+4. InterestExpense
+   Label: Interest Expense
+   Definition: Amount of the cost of borrowed funds accounted for as interest expense.
+   Latest period: 2024-06-30
+   Recent coverage: 6
+   Total annual periods: 17
+   Recent periods: 2024-06-30, 2023-06-30, 2022-06-30, 2021-06-30, 2020-06-30, 2019-06-30
+
+
+SECTION 3: OPERATING INCOME CANDIDATES
+--------------------------------------------------------------------------------
+1. OperatingIncomeLoss
+   Label: Operating Income (Loss)
+   Definition: The net result for the period of deducting operating expenses from operating revenues.
+   Latest period: 2026-06-30
+   Recent coverage: 6
+   Total annual periods: 19
+   Recent periods: 2026-06-30, 2025-06-30, 2024-06-30, 2023-06-30, 2022-06-30, 2021-06-30
+
+2. SegmentReportingReconcilingItemForOperatingProfitLossFromSegmentToConsolidatedAmount
+   Label: Segment Reporting, Reconciling Item for Operating Profit (Loss) from Segment to Consolidated, Amount (Deprecated 2011-01-31)
+   Definition: Amount of an item in the reconciliation of total profit or loss from reportable segments, to the entity's consolidated income before income taxes, extraordinary items, discontinued operations.
+   Latest period: 2010-06-30
+   Recent coverage: 3
+   Total annual periods: 3
+   Recent periods: 2010-06-30, 2009-06-30, 2008-06-30
