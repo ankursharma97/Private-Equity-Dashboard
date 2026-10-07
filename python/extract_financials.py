@@ -5,31 +5,19 @@ from pathlib import Path
 import pandas as pd
 
 
-# ============================================================
-# PATHS
-# ============================================================
-
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 ZIP_FILE = BASE_DIR / "data" / "companyfacts.zip"
-UNIVERSE_FILE = BASE_DIR / "data" / "investment_universe.csv"
+UNIVERSE_FILE = BASE_DIR / "data" / "classified_investment_universe.csv"
 
 OUTPUT_FILE = BASE_DIR / "data" / "financials_raw.csv"
 ERROR_FILE = BASE_DIR / "data" / "financial_extraction_errors.csv"
 
 
-# ============================================================
-# CONFIGURATION
-# ============================================================
-
 ANNUAL_FORMS = {"10-K", "10-K/A"}
 
 MAX_PERIODS = 5
 
-
-# ============================================================
-# SEC XBRL CONCEPTS
-# ============================================================
 
 CONCEPTS = {
 
@@ -93,14 +81,11 @@ CONCEPTS = {
 }
 
 
-# ============================================================
-# DEBT CONCEPTS
-# ============================================================
-
 DEBT_COMBINED_CONCEPTS = [
     "DebtLongtermAndShorttermCombinedAmount",
     "LongTermDebtAndCapitalLeaseObligations",
 ]
+
 
 DEBT_CURRENT_CONCEPTS = [
     "DebtCurrent",
@@ -108,15 +93,12 @@ DEBT_CURRENT_CONCEPTS = [
     "ShortTermBorrowings",
 ]
 
+
 DEBT_NONCURRENT_CONCEPTS = [
     "LongTermDebtNoncurrent",
     "LongTermDebt",
 ]
 
-
-# ============================================================
-# DATE / PERIOD HELPERS
-# ============================================================
 
 def parse_date(value):
 
@@ -179,10 +161,6 @@ def is_instant_period(record):
     )
 
 
-# ============================================================
-# RECORD HELPERS
-# ============================================================
-
 def get_record_value(record):
 
     if "val" in record:
@@ -217,10 +195,6 @@ def get_preferred_records(concept):
 
     return []
 
-
-# ============================================================
-# COMPANY FACTS LOADING
-# ============================================================
 
 def build_zip_index(zf):
     """
@@ -284,10 +258,6 @@ def get_us_gaap_facts(company_json):
     )
 
 
-# ============================================================
-# ANNUAL RECORD EXTRACTION
-# ============================================================
-
 def get_annual_records(
     us_gaap,
     concept_name
@@ -342,10 +312,6 @@ def get_annual_records(
     return usable
 
 
-# ============================================================
-# INSTANT RECORD EXTRACTION
-# ============================================================
-
 def get_instant_records(
     us_gaap,
     concept_name
@@ -399,10 +365,6 @@ def get_instant_records(
     return usable
 
 
-# ============================================================
-# DEDUPLICATION
-# ============================================================
-
 def deduplicate_by_end(records):
     """
     Keep the latest filed record for each period end.
@@ -440,10 +402,6 @@ def deduplicate_by_end(records):
         orient="records"
     )
 
-
-# ============================================================
-# CONCEPT SELECTION
-# ============================================================
 
 def select_best_annual_concept(
     us_gaap,
@@ -597,10 +555,6 @@ def select_best_instant_concept(
     return evaluated[0]
 
 
-# ============================================================
-# VALUE MAPPING
-# ============================================================
-
 def records_to_value_map(records):
 
     return {
@@ -672,10 +626,6 @@ def extract_instant_metric(
         selected["concept"]
     )
 
-
-# ============================================================
-# D&A
-# ============================================================
 
 def extract_da(
     us_gaap,
@@ -772,10 +722,6 @@ def extract_da(
     )
 
 
-# ============================================================
-# DEBT
-# ============================================================
-
 def extract_debt(
     us_gaap,
     period_ends
@@ -865,10 +811,6 @@ def extract_debt(
     )
 
 
-# ============================================================
-# PERIOD BACKBONE
-# ============================================================
-
 def get_period_backbone(
     us_gaap
 ):
@@ -900,10 +842,6 @@ def get_period_backbone(
     return []
 
 
-# ============================================================
-# FISCAL YEAR
-# ============================================================
-
 def derive_fiscal_year(
     period_end,
     source_fy=None
@@ -923,10 +861,6 @@ def derive_fiscal_year(
         date.year
     )
 
-
-# ============================================================
-# COMPANY EXTRACTION
-# ============================================================
 
 def extract_company(
     company_row,
@@ -957,10 +891,6 @@ def extract_company(
 
     if not period_ends:
         return []
-
-    # --------------------------------------------------------
-    # ANNUAL METRICS
-    # --------------------------------------------------------
 
     revenue_values, revenue_concept = (
         extract_annual_metric(
@@ -1015,10 +945,6 @@ def extract_company(
         )
     )
 
-    # --------------------------------------------------------
-    # INSTANT METRICS
-    # --------------------------------------------------------
-
     cash_values, cash_concept = (
         extract_instant_metric(
             us_gaap,
@@ -1041,10 +967,6 @@ def extract_company(
             period_ends
         )
     )
-
-    # --------------------------------------------------------
-    # SOURCE METADATA
-    # --------------------------------------------------------
 
     fiscal_metadata = {}
 
@@ -1077,10 +999,6 @@ def extract_company(
                         "filed"
                     ),
                 }
-
-    # --------------------------------------------------------
-    # BUILD ROWS
-    # --------------------------------------------------------
 
     rows = []
 
@@ -1121,8 +1039,6 @@ def extract_company(
             "source_filed": metadata.get(
                 "source_filed"
             ),
-
-            # Financial values
 
             "revenue": revenue_values.get(
                 period_end
@@ -1170,8 +1086,6 @@ def extract_company(
                 period_end
             ),
 
-            # Selected concepts
-
             "revenue_concept": revenue_concept,
 
             "operating_income_concept": (
@@ -1206,10 +1120,6 @@ def extract_company(
     return rows
 
 
-# ============================================================
-# MAIN PRODUCTION PIPELINE
-# ============================================================
-
 def main():
 
     print("=" * 80)
@@ -1218,12 +1128,8 @@ def main():
 
     print()
 
-    # --------------------------------------------------------
-    # LOAD INVESTMENT UNIVERSE
-    # --------------------------------------------------------
-
     print(
-        f"Loading universe:\n{UNIVERSE_FILE}"
+        f"Loading classified universe:\n{UNIVERSE_FILE}"
     )
 
     universe = pd.read_csv(
@@ -1237,16 +1143,29 @@ def main():
         .str.strip()
     )
 
+    if "investment_eligible" not in universe.columns:
+        raise ValueError(
+            "Column 'investment_eligible' not found "
+            "in classified investment universe."
+        )
+
+    before_filter = len(universe)
+
+    universe = universe[
+        universe["investment_eligible"] == True
+    ].copy()
+
     print(
-        f"Companies to process: "
+        f"Total classified entities: "
+        f"{before_filter:,}"
+    )
+
+    print(
+        f"Eligible companies to process: "
         f"{len(universe):,}"
     )
 
     print()
-
-    # --------------------------------------------------------
-    # OPEN COMPANY FACTS ZIP
-    # --------------------------------------------------------
 
     print(
         f"Opening Company Facts:\n{ZIP_FILE}"
@@ -1278,10 +1197,6 @@ def main():
         )
 
         print()
-
-        # ----------------------------------------------------
-        # PROCESS COMPANIES
-        # ----------------------------------------------------
 
         for _, company_row in universe.iterrows():
 
@@ -1344,10 +1259,6 @@ def main():
                     }
                 )
 
-            # ------------------------------------------------
-            # PROGRESS
-            # ------------------------------------------------
-
             if (
                 processed == 1
                 or processed % 100 == 0
@@ -1361,10 +1272,6 @@ def main():
                     f"Successful: {successful:,} | "
                     f"Failed: {failed:,}"
                 )
-
-    # ========================================================
-    # BUILD OUTPUT DATAFRAME
-    # ========================================================
 
     print()
 
@@ -1395,18 +1302,10 @@ def main():
         ]
     )
 
-    # --------------------------------------------------------
-    # SAVE RAW FINANCIAL DATA
-    # --------------------------------------------------------
-
     result.to_csv(
         OUTPUT_FILE,
         index=False
     )
-
-    # --------------------------------------------------------
-    # SAVE ERRORS
-    # --------------------------------------------------------
 
     if errors:
 
@@ -1418,10 +1317,6 @@ def main():
             ERROR_FILE,
             index=False
         )
-
-    # ========================================================
-    # FINAL SUMMARY
-    # ========================================================
 
     print()
 
@@ -1466,10 +1361,6 @@ def main():
             f"Error log:\n"
             f"{ERROR_FILE}"
         )
-
-    # ========================================================
-    # MISSING DATA SUMMARY
-    # ========================================================
 
     financial_columns = [
         "revenue",

@@ -6,50 +6,24 @@ import pandas as pd
 import extract_financials
 
 
-# ============================================================
-# PATHS
-# ============================================================
-
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 ZIP_FILE = BASE_DIR / "data" / "companyfacts.zip"
-UNIVERSE_FILE = BASE_DIR / "data" / "investment_universe.csv"
+UNIVERSE_FILE = BASE_DIR / "data" / "classified_investment_universe.csv"
+OUTPUT_FILE = BASE_DIR / "data" / "extraction_failure_diagnostic.csv"
 
-OUTPUT_FILE = (
-    BASE_DIR
-    / "data"
-    / "extraction_failure_diagnostic.csv"
-)
-
-
-# ============================================================
-# CONFIGURATION
-# ============================================================
-
-# We only diagnose the first 600 companies because that is
-# where we already observed the high failure rate.
-TEST_COMPANIES = 600
-
-
-# ============================================================
-# MAIN
-# ============================================================
 
 def main():
-
-    print("=" * 80)
     print("EXTRACTION FAILURE DIAGNOSTIC")
-    print("=" * 80)
+    print("=" * 50)
 
-    print()
+    universe = pd.read_csv(UNIVERSE_FILE)
 
-    # --------------------------------------------------------
-    # LOAD UNIVERSE
-    # --------------------------------------------------------
-
-    universe = pd.read_csv(
-        UNIVERSE_FILE
-    )
+    if "investment_eligible" not in universe.columns:
+        raise ValueError(
+            "classified_investment_universe.csv is missing "
+            "'investment_eligible'."
+        )
 
     universe["ticker"] = (
         universe["ticker"]
@@ -58,294 +32,131 @@ def main():
         .str.strip()
     )
 
-    universe = universe.head(
-        TEST_COMPANIES
-    ).copy()
+    universe = universe[
+        universe["investment_eligible"] == True
+    ].copy()
 
-    print(
-        f"Companies being diagnosed: "
-        f"{len(universe):,}"
-    )
-
+    print(f"Eligible companies in universe: {len(universe):,}")
     print()
 
-    # --------------------------------------------------------
-    # OPEN ZIP
-    # --------------------------------------------------------
-
-    print(
-        f"Opening Company Facts:\n{ZIP_FILE}"
-    )
+    print(f"Opening Company Facts:\n{ZIP_FILE}")
+    print("Building ZIP index...")
 
     errors = []
-
     successful = 0
     failed = 0
 
-    with zipfile.ZipFile(
-        ZIP_FILE,
-        "r"
-    ) as zf:
+    with zipfile.ZipFile(ZIP_FILE, "r") as zf:
+        zip_index = extract_financials.build_zip_index(zf)
 
-        print(
-            "Building ZIP index..."
-        )
-
-        zip_index = (
-            extract_financials.build_zip_index(
-                zf
-            )
-        )
-
-        print(
-            f"Indexed files: "
-            f"{len(zip_index):,}"
-        )
-
+        print(f"Indexed files: {len(zip_index):,}")
         print()
-
-        # ----------------------------------------------------
-        # PROCESS COMPANIES
-        # ----------------------------------------------------
 
         for position, (_, company_row) in enumerate(
             universe.iterrows(),
             start=1
         ):
-
-            ticker = str(
-                company_row["ticker"]
-            ).upper()
-
-            company = company_row[
-                "company"
-            ]
-
-            cik = company_row[
-                "cik"
-            ]
+            ticker = str(company_row["ticker"]).upper()
+            company = company_row["company"]
+            cik = company_row["cik"]
 
             try:
-
-                rows = (
-                    extract_financials.extract_company(
-                        company_row,
-                        zf,
-                        zip_index
-                    )
+                rows = extract_financials.extract_company(
+                    company_row,
+                    zf,
+                    zip_index
                 )
 
                 if rows:
-
                     successful += 1
-
                 else:
-
                     failed += 1
 
-                    error_record = {
+                    errors.append({
                         "position": position,
                         "ticker": ticker,
                         "company": company,
                         "cik": cik,
-                        "error_type": (
-                            "NO_ANNUAL_PERIODS"
-                        ),
+                        "error_type": "NO_ANNUAL_PERIODS",
                         "error_message": (
-                            "No annual financial "
-                            "periods found."
+                            "No annual financial periods found."
                         ),
-                    }
-
-                    errors.append(
-                        error_record
-                    )
-
-                    print()
-                    print(
-                        f"FAILED [{position}/"
-                        f"{len(universe)}] "
-                        f"{ticker} | "
-                        f"{company}"
-                    )
+                    })
 
                     print(
-                        "  Type: "
-                        "NO_ANNUAL_PERIODS"
+                        f"FAILED [{position}/{len(universe)}] "
+                        f"{ticker} | {company}"
                     )
+                    print("  Type: NO_ANNUAL_PERIODS")
 
             except Exception as exc:
-
                 failed += 1
 
-                error_record = {
+                errors.append({
                     "position": position,
                     "ticker": ticker,
                     "company": company,
                     "cik": cik,
-                    "error_type": type(
-                        exc
-                    ).__name__,
-                    "error_message": str(
-                        exc
-                    ),
-                }
-
-                errors.append(
-                    error_record
-                )
-
-                print()
-                print(
-                    f"FAILED [{position}/"
-                    f"{len(universe)}] "
-                    f"{ticker} | "
-                    f"{company}"
-                )
+                    "error_type": type(exc).__name__,
+                    "error_message": str(exc),
+                })
 
                 print(
-                    f"  Type: "
-                    f"{type(exc).__name__}"
+                    f"FAILED [{position}/{len(universe)}] "
+                    f"{ticker} | {company}"
                 )
+                print(f"  Type: {type(exc).__name__}")
+                print(f"  Error: {exc}")
+
+            if position % 100 == 0 or position == len(universe):
+                success_rate = successful / position * 100
+                failure_rate = failed / position * 100
 
                 print(
-                    f"  Error: "
-                    f"{exc}"
+                    f"[{position:,}/{len(universe):,}] "
+                    f"Successful: {successful:,} | "
+                    f"Failed: {failed:,} | "
+                    f"Success rate: {success_rate:.2f}%"
                 )
 
-            # ------------------------------------------------
-            # PROGRESS
-            # ------------------------------------------------
-
-            if (
-                position % 50 == 0
-                or position == len(universe)
-            ):
-
-                print()
-
-                print(
-                    f"Progress: "
-                    f"{position:,}/"
-                    f"{len(universe):,} | "
-                    f"Successful: "
-                    f"{successful:,} | "
-                    f"Failed: "
-                    f"{failed:,}"
-                )
-
-                print()
-
-    # ========================================================
-    # SAVE DIAGNOSTIC RESULTS
-    # ========================================================
-
-    error_df = pd.DataFrame(
-        errors
-    )
+    error_df = pd.DataFrame(errors)
 
     if not error_df.empty:
-
-        error_df.to_csv(
-            OUTPUT_FILE,
-            index=False
-        )
-
-    # ========================================================
-    # SUMMARY
-    # ========================================================
+        error_df.to_csv(OUTPUT_FILE, index=False)
 
     print()
-    print("=" * 80)
+    print("=" * 50)
     print("DIAGNOSTIC COMPLETE")
-    print("=" * 80)
+    print("=" * 50)
 
-    print()
-
-    print(
-        f"Companies tested: "
-        f"{len(universe):,}"
-    )
-
-    print(
-        f"Successful: "
-        f"{successful:,}"
-    )
-
-    print(
-        f"Failed: "
-        f"{failed:,}"
-    )
+    print(f"Companies tested: {len(universe):,}")
+    print(f"Successful: {successful:,}")
+    print(f"Failed: {failed:,}")
 
     if len(universe) > 0:
+        success_rate = successful / len(universe) * 100
+        failure_rate = failed / len(universe) * 100
 
-        success_rate = (
-            successful
-            / len(universe)
-            * 100
-        )
-
-        failure_rate = (
-            failed
-            / len(universe)
-            * 100
-        )
-
-        print(
-            f"Success rate: "
-            f"{success_rate:.2f}%"
-        )
-
-        print(
-            f"Failure rate: "
-            f"{failure_rate:.2f}%"
-        )
-
-    print()
+        print(f"Success rate: {success_rate:.2f}%")
+        print(f"Failure rate: {failure_rate:.2f}%")
 
     if not error_df.empty:
+        print()
+        print(f"Diagnostic file saved to:")
+        print(OUTPUT_FILE)
 
+        print()
+        print("FAILURE TYPES")
+        print("-" * 50)
         print(
-            f"Diagnostic file saved to:"
-        )
-
-        print(
-            OUTPUT_FILE
+            error_df["error_type"]
+            .value_counts()
+            .to_string()
         )
 
         print()
-
-        print(
-            "=" * 80
-        )
-
-        print(
-            "FAILURE TYPES"
-        )
-
-        print(
-            "=" * 80
-        )
-
-        print(
-            error_df[
-                "error_type"
-            ].value_counts().to_string()
-        )
-
-        print()
-
-        print(
-            "=" * 80
-        )
-
-        print(
-            "FAILED COMPANIES"
-        )
-
-        print(
-            "=" * 80
-        )
+        print("FAILED COMPANIES")
+        print("-" * 50)
 
         print(
             error_df[
@@ -356,16 +167,11 @@ def main():
                     "error_type",
                     "error_message",
                 ]
-            ].to_string(
-                index=False
-            )
+            ].to_string(index=False)
         )
-
     else:
-
-        print(
-            "No failures detected."
-        )
+        print()
+        print("No failures detected.")
 
 
 if __name__ == "__main__":
